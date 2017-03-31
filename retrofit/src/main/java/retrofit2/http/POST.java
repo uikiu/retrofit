@@ -34,6 +34,10 @@ public @interface POST {
    * <p>
    * See {@linkplain retrofit2.Retrofit.Builder#baseUrl(HttpUrl) base URL} for details of how
    * this is resolved against a base URL to create the full endpoint URL.
+   * //--------------------------------------------------------------------------------------------
+   * 端点的相对或者绝对路径或者完整的URL.如果方法第一个参数用用{@link Url @Url}注释，则该值是可选的。
+   * 请参阅{@linkplain retrofit2.Retrofit.Builder#baseUrl(HttpUrl) base URL},以了解如何根据基本URL解析创建完整的端点URL
+   *
    */
   String value() default "";
 }
